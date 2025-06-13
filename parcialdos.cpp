@@ -34,7 +34,7 @@ float tres(int tiempo[], int bajas[], int n) {
         }
     }
     if (cantidad > 0) {
-        return baj * 100.0 / cantidad;
+        return baj/ cantidad;
     }
     return 0;
 }
@@ -158,7 +158,7 @@ float catorce(int asesinatos[], int bajas[], int n) {
             cont++;
         }
     }
-    return (float)cont * 100 / n;
+    return (float)cont/ n;
 }
 
 string quince(string alias[], int armas[], int n) {
@@ -197,9 +197,9 @@ int main() {
         cin >> tiempo[i];
     }
 
-    cout << "\n----- RESULTADOS -----\n";
-    cout << "1. Alias del jugador con más asesinatos: " << uno(alias, asesinatos, n) << endl;
-    cout << "2. Minutos del jugador con más bajas recibidas: " << dos(bajas, tiempo, n) << endl;
+    cout << "\n----- RESULTADOS -----"<<endl;
+    cout << "1. Alias del jugador con mas asesinatos: " << uno(alias, asesinatos, n) << endl;
+    cout << "2. Minutos del jugador con mas bajas recibidas: " << dos(bajas, tiempo, n) << endl;
     cout << "3. % de muertes de jugadores con 100 a 200 minutos: " << tres(tiempo, bajas, n) << "%" << endl;
     cout << "4. Asesinatos del jugador de mayor edad: " << cuatro(edad, asesinatos, n) << endl;
     cout << "5. Alias del jugador de menor edad: " << cinco(alias, edad, n) << endl;
